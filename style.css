@@ -7,13 +7,18 @@
     margin: 0 auto;
 }
 
+.main {
+    max-width: 1110px;
+    width: 77.1%;
+    margin: 0 auto;
+}
+
 
                                 /* HOMEPAGE CSS */
 
 
 
 .header {
-    max-width: 77%;
     margin: 0 auto;
     margin-top: 64px;
     margin-bottom: 54px;
@@ -29,6 +34,8 @@
 .header__nav-list {
     display: flex;
     justify-content: space-between;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .header__list {
@@ -55,7 +62,6 @@
 
 
 .lead {
-    max-width: 78%;
     margin: 54px auto 150px auto;
     background-image: url("./images/homepage/desktop/image-homepage-hero@2x.jpg");
     background-size: cover;
@@ -112,19 +118,29 @@
 
 
 .intro {
-    max-width: 70.5%;
-    margin: 150px auto;
-    margin-left: 165px;
+    max-width: 1015px;
+    width: 91.4%;
+    margin: 150px 0;
     display: flex;
     justify-content: space-between;
 }
 
-.intro__image {
+.intro__image_desktop {
     max-width: 540px;
+    width: 53%;
+}
+
+.intro__image_tablet {
+    display: none;
+}
+
+.intro__image_mobile {
+    display: none;
 }
 
 .intro__text-block {
     max-width: 350px;
+    width: 70.1%;
     border-top: 1px solid rgba(51, 50, 61, 0.15);
     border-bottom: 1px solid rgba(51, 50, 61, 0.15);
 }
@@ -166,19 +182,24 @@
 }
 
 .button-secondary_place_intro {
-    margin-top: 28px;
     margin-bottom: 46px;
 }
 
 
 
 
-
 .contact {
-    max-width: 77.1%;
     display: flex;
     justify-content: space-between;
     margin: 150px auto;
+}
+
+.title {
+    font-family: "Ibarra Real Nova", serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 42px;
+    letter-spacing: -0.36px;
 }
 
 .title_place_contact {
@@ -188,7 +209,7 @@
 
 .horizontal-line {
     background-color: rgba(51, 50, 61, 0.15);
-    width: 45%;
+    width: 48%;
     height: 1px;
     margin: auto;
 }
@@ -207,7 +228,8 @@
 }
 
 .footer__nav-container {
-    max-width: 77.1%;
+    max-width: 1110px;
+    width: 77.1%;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -264,29 +286,34 @@
                 
                                 
 .project {
-    max-width: 70.5%;
+    width: 91.44%;
+    max-width: 1015px;
     margin: 0;
     margin-bottom: 80px;
     display: flex;
     justify-content: space-between;
 }
 
-.project_place_left {
-    margin-left: 165px;
-    margin-right: 260px;
-}
-
 .project_place_right {
-    margin-right: 165px;
-    margin-left: 260px;
+    margin-left: auto;
 }
 
-.project__image {
+.project__image_desktop {
     max-width: 540px;
+    width: 53.2%;
+}
+
+.project__image_tablet {
+    display: none;
+}
+
+.project__image_mobile {
+    display: none;
 }
 
 .project__text-block {
     max-width: 350px;
+    width: 34.48%;
     border-top: 1px solid rgba(51, 50, 61, 0.15);
     border-bottom: 1px solid rgba(51, 50, 61, 0.15);
 }
@@ -308,6 +335,7 @@
     line-height: 30px;
     margin-top: 28px;
     margin-bottom: 24px;
+    opacity: 0.8;
 }
 
 .button-secondary_place_project {
@@ -469,7 +497,7 @@
     flex-direction: column;
 }
 
-.arrow__title {
+.arrow__{
     font-family: "Ibarra Real Nova", serif;
     font-weight: 400;
     font-size: 32px;
@@ -623,4 +651,130 @@
 
 .button-primary_place_contact-form {
     height: 48px;
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+
+                                    /* HOMEPAGE CSS 768 */
+
+    .header {
+        margin-bottom: 46px;
+    }
+
+    .main {
+        max-width: 689px;
+        width: 90%;
+    }
+
+    .lead {
+        margin: 47px auto 96px auto;
+        background-image: url("./images/homepage/tablet/image-homepage-hero@2x.jpg");
+        padding-top: 47%;
+    }
+
+    .lead__box {
+        width: 75%;
+        max-width: 514px;
+    }
+
+    .lead__title {
+        font-size: 40px;
+        line-height: 42px;
+        letter-spacing: -0.36px;
+        margin: 56px 55px 48px 0;
+    }
+
+    .intro {
+        margin: 96px 0;
+        width: 100%;
+    }    
+
+    .intro__text-block {
+        width: 49.2%;
+    }
+
+    .intro__image_desktop {
+        display: none;
+    }
+
+    .intro__image_tablet {
+        display: block;
+        width: 40.8%;
+    }
+
+    .intro__image_mobile {
+        display: none;
+    }
+
+    .contact {
+        margin: 96px auto;
+    }
+
+    .horizontal-line {
+        width: 16.4%;
+    }
+
+    .footer__nav-container {
+        max-width: 689px;
+        width: 100%;
+    }
+
+                                    /* PORTFOLIO CSS 768 */  
+                      
+    
+    .main {
+        max-width: 689px;
+        width: 90%;
+    }   
+
+    .header {
+        margin-top: 64px;
+        margin-bottom: 94px;
+    }
+
+    .project {
+        width: 100%;
+        margin-bottom: 80px;
+    }
+
+    .project__image_desktop {
+        display: none;
+    }
+
+    .project__image_tablet {
+        display: block;
+        max-width: 339px;
+        width: 49.2%;
+        max-height: 314px;
+        height: 92.6%;
+        align-self: center;
+    }
+
+    .project__image_mobile {
+        display: none;
+    }
+
+    .project__text-block {
+        max-width: 281px;
+        width: 40.8%;
+    }
+
+    .project__title {
+        margin-top: 32px;
+    }
+
+    .project__paragraph {
+        font-size: 15px;
+        margin-bottom: 35px;
+    }
+
+    .button-secondary_place_project {
+        width: 175px;
+        margin-bottom: 50px;
+    }
+
+
 }
