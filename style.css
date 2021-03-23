@@ -21,7 +21,6 @@
 .header {
     margin: 0 auto;
     margin-top: 64px;
-    margin-bottom: 54px;
     display: flex;
     justify-content: space-between;
 }
@@ -349,26 +348,32 @@
                                 /* PORTFOLIO DETAIL CSS */
 
                             
-.cover-image {
+.cover-image_desktop {
+    display: block;
+    width: 100%;
     display: block;
     margin: 94px auto 115px auto;
-    width: 77.1%;
+}
 
+.cover-image_tablet {
+    display: none;
+}
+
+.cover-image_mobile {
+    display: none;
 }
 
 
 .detail {
-    width: 77.1%;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
     
 }
 
-
-
 .overview__text-block {
     max-width: 350px;
+    width: 31.53%;
     max-height: 498px;
     border-top: 1px solid rgba(51, 50, 61, 0.15);
     border-bottom: 1px solid rgba(51, 50, 61, 0.15);
@@ -409,7 +414,7 @@
 
 .info {
     max-width: 635px;
-    width: 57%;
+    width: 57.2%;
 }
 
 .background {
@@ -446,17 +451,24 @@
 }
 
 
-.preview__image {
+.preview__image_desktop {
     width: 100%;
 }
 
-.preview__image_first {
+.preview__image_tablet {
+    display: none;
+}
+
+.preview__image_mobile {
+    display: none;
+}
+
+.preview__image_desktop:first-of-type {
     margin-bottom: 32px;
 }
 
 
 .arrows {
-    width: 77.1%;
     max-width: 1110px;
     margin: 64px auto 115px auto;
     display: flex;
@@ -497,7 +509,7 @@
     flex-direction: column;
 }
 
-.arrow__{
+.arrow__title {
     font-family: "Ibarra Real Nova", serif;
     font-weight: 400;
     font-size: 32px;
@@ -513,6 +525,10 @@
     line-height: 30px;
     margin-top: 0;
     opacity: 50%;
+}
+
+.contact_place_detail {
+    margin-top: 115px;
 }
 
 
@@ -656,17 +672,22 @@
 
 
 
+
+
+
+
+
 @media only screen and (max-width: 768px) {
 
                                     /* HOMEPAGE CSS 768 */
 
-    .header {
-        margin-bottom: 46px;
-    }
-
     .main {
         max-width: 689px;
         width: 90%;
+    }
+    
+    .header {
+        margin-bottom: 46px;
     }
 
     .lead {
@@ -724,20 +745,14 @@
 
                                     /* PORTFOLIO CSS 768 */  
                       
-    
-    .main {
-        max-width: 689px;
-        width: 90%;
-    }   
-
-    .header {
-        margin-top: 64px;
-        margin-bottom: 94px;
-    }
 
     .project {
         width: 100%;
         margin-bottom: 80px;
+    }
+
+    .project:first-of-type {
+        margin-top: 94px;
     }
 
     .project__image_desktop {
@@ -776,5 +791,88 @@
         margin-bottom: 50px;
     }
 
+
+                                /* PORTFOLIO DETAIL CSS */
+
+    .cover-image_desktop {
+        display: none;
+    }
+
+    .cover-image_tablet {
+        display: block;
+        margin-top: 94px;
+        margin-bottom: 40px; 
+        width: 100%;
+    }
+    
+    .cover-image_mobile {
+        display: none;
+    }
+
+    .detail {
+        margin-bottom: 80px;
+        flex-direction: column;
+    }
+
+    .overview__text-block {
+        max-width: 689px;
+        width: 100%;
+        padding: 32px 0;
+        margin-bottom: 40px;
+    }
+
+    .overview__title {
+        margin-top: 0;
+    }
+
+    .overview__paragraph {
+        width: 49.2%;
+        margin-left: auto;
+        margin-top: -45px;
+    }
+
+    .overview__bottom-wrapper {
+        width: 49.2%;
+        margin-top: -115px;
+    }
+
+    .overview__language {
+        font-size: 13px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .button-secondary_place_overview {
+        margin-top: 16px;
+        margin-bottom: 0;
+    }
+
+    .info {
+        width: 100%;
+    }
+
+    .preview {
+        margin-top: 40px;
+    }
+
+    .preview__title {
+        margin-bottom: 40px;
+    }
+
+    .preview__image_desktop {
+        display: none;
+    }
+
+    .preview__image_tablet {
+        display: block;
+        width: 100%;
+        margin-top: 32px;
+    }
+
+    .preview__image_mobile {
+        display: none;
+    }
+
+  
 
 }
