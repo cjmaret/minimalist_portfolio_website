@@ -131,6 +131,8 @@
 .intro__image_desktop {
     max-width: 540px;
     width: 53%;
+    height: 111%;
+    margin-right: 20px;
 }
 
 .intro__image_tablet {
@@ -675,6 +677,32 @@
 
 
 
+@media only screen and (max-width: 1104px) {
+    .lead {
+        padding-top: 32%;
+    }
+
+    .lead__box {
+        max-width: 1104px;
+        width: 55%;
+    }
+
+    .lead__title {
+        font-size: 42px;
+        line-height: 42px;
+    }
+
+    .horizontal-line {
+        width: 25%;
+ 
+    }
+    
+}
+
+
+
+
+
 
 
 
@@ -725,6 +753,7 @@
     .intro__image_tablet {
         display: block;
         width: 40.8%;
+        height: 213.5%;
     }
 
     .intro__image_mobile {
@@ -913,6 +942,140 @@
 }
 
 
+
+
+
+
+@media only screen and (max-width: 704px) {
+
+
+                                 /* HOMEPAGE CSS 580 */
+
+    .footer__nav-container {
+        max-width: 104px;
+        width: 27.73%;
+        height: 354px;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .logo_place_footer {
+        margin: 0 auto;
+
+    }
+    .footer__nav-list {
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        margin: 40px auto;
+    }
+
+    .footer__link {
+        margin: 0 auto;
+        margin-bottom: 32px;
+    }
+
+    .footer__link:last-child {
+        margin-bottom: 0;
+    }
+
+    .footer__nav-left {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .footer__logo-list {
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+
+
+@media only screen and (max-width: 510px) {
+
+                            /* HOMEPAGE CSS 510 */
+
+
+    
+    .lead__box {
+        width: 75%;
+    }
+    
+    .lead__title {
+        margin: 15px 15px 15px 0;
+    }
+
+    .intro__image_tablet {
+        margin-right: 10px;
+    }
+
+    .intro__text-block {
+        width: 100%;
+    }
+
+    .intro__title {
+        margin-top: 25px;
+        margin-bottom: 28px;
+    }
+
+    .horizontal-line {
+        display: none;
+    }
+
+    .contact {
+        flex-direction: column;
+
+        margin: 0 auto 80px auto;
+    }
+
+    .title_place_contact {
+        text-align: center;
+        margin: 0 auto 40px auto;
+    }
+
+    .button-secondary_place_contact {
+        margin: 0 auto;
+    }
+
+
+
+                                 /* CONTACT CSS 510 */
+    
+    .contact-info {
+        flex-direction: column;
+        margin-top: 40px;
+        padding: 25px 0 32px;
+    }
+
+    .contact-info__right-block {
+        width: 100%;
+    }
+
+    .contact-info__title {
+        margin-bottom: 24px;
+    }
+
+    .contact-form {
+        flex-direction: column;
+        border-top: none;
+        padding: 0;
+        margin-bottom: 80px;
+    }
+
+    .contact-form__title {
+        margin: 32px 0 24px;
+    }
+
+}
+
+
+
+
+
 @media only screen and (max-width: 375px) {
 
 
@@ -990,55 +1153,15 @@
         margin-top: 0;
     }
 
+    .button-secondary_place_contact {
+        margin: 0 auto;
+    }
+
     .title_place_contact {
         text-align: center;
         margin-bottom: 40px;
     }
 
-    .footer__nav-container {
-        max-width: 104px;
-        width: 27.73%;
-        height: 354px;
-        flex-direction: column;
-        justify-content: center;
-        margin: auto;
-    }
-
-    .button-secondary_place_contact {
-        margin: 0 auto;
-    }
-
-    .logo_place_footer {
-        margin: 0 auto;
-
-    }
-    .footer__nav-list {
-        flex-direction: column;
-        justify-content: center;
-        margin: 0;
-        padding: 0;
-        margin: 40px auto;
-    }
-
-    .footer__link {
-        margin: 0 auto;
-        margin-bottom: 32px;
-    }
-
-    .footer__link:last-child {
-        margin-bottom: 0;
-    }
-
-    .footer__nav-left {
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .footer__logo-list {
-        justify-content: center;
-        margin: 0;
-        padding: 0;
-    }
 
                                  /*PORTFOLIO CSS 375 */
 
@@ -1172,30 +1295,7 @@
 
                                  /* CONTACT CSS 375 */
 
-    .contact-info {
-        flex-direction: column;
-        padding: 25px 0 32px;
-    }
 
-    .contact-info__right-block {
-        width: 100%;
-    }
-
-    .contact-info__title {
-        margin-bottom: 24px;
-    }
-
-    .contact-form {
-        flex-direction: column;
-        border-top: none;
-        padding: 0;
-        margin-bottom: 80px;
-    }
-
-
-    .contact-form__title {
-        margin: 32px 0 24px;
-    }
 
 
 }
