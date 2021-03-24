@@ -11,86 +11,100 @@
 </head>
 
 <body class="page">
+  <main class="main">
+    <header class="header">
+      <svg class="logo logo_place_header" xmlns="http://www.w3.org/2000/svg" width="61" height="32">
+        <path fill="#33323D" fill-rule="evenodd"
+          d="M60.082 5.878L44.408 32 28.735 5.878h31.347zM15.673 0l15.674 26.122H0L15.673 0z" />
+      </svg>
+      <ul class="header__nav-list">
+        <li class="header__list"><a class="header__link" href="#">Home</a></li>
+        <li class="header__list"><a class="header__link" href="#">Portfolio</a></li>
+        <li class="header__list"><a class="header__link" href="#">Contact Me</a></li>
+      </ul>
+    </header>
 
-  <header class="header">
-    <svg class="logo logo_place_header" xmlns="http://www.w3.org/2000/svg" width="61" height="32">
-      <path fill="#33323D" fill-rule="evenodd"
-        d="M60.082 5.878L44.408 32 28.735 5.878h31.347zM15.673 0l15.674 26.122H0L15.673 0z" />
-    </svg>
-    <ul class="header__nav-list">
-      <li class="header__list"><a class="header__link" href="#">Home</a></li>
-      <li class="header__list"><a class="header__link" href="#">Portfolio</a></li>
-      <li class="header__list"><a class="header__link" href="#">Contact Me</a></li>
-    </ul>
-  </header>
+    <img class="cover-image_desktop" src="./images/detail/desktop/image-bookmark-hero@2x.jpg" alt="bookmark preview" />
+    <img class="cover-image_tablet" src="./images/detail/tablet/image-bookmark-hero@2x.jpg" alt="bookmark preview" />
+    <img class="cover-image_mobile" src="./images/detail/mobile/image-bookmark-hero@2x.jpg" alt="bookmark preview" />
 
-  <img class="cover-image" src="./images/detail/desktop/image-bookmark-hero@2x.jpg" alt="bookmark preview" />
+    <section class="detail">
+      <div class="overview__text-block">
+        <h2 class="overview__title">Bookmark</h2>
+        <p class="overview__paragraph">This project required me to build a fully responsive landing page to the designs
+          provided. I used HTML5, along with CSS Grid and JavaScript for the areas that
+          required interactivity, such as the features section.</p>
+        <div class="overview__bottom-wrapper">
+          <p class="overview__language">Interaction Design / Front End Development</p>
+          <p class="overview__language">HTML / CSS / JS</p>
+          <button class="button-secondary button-secondary_place_overview">
+            <p class="button-secondary__text">Visit Website</p>
+          </button>
+        </div>
+      </div>
+      <div class="info">
+        <div class="background">
+          <h2 class="background__title">Project Background</h2>
+          <p class="background__paragraph">This project was a front-end challenge from Frontend Mentor. It’s a platform
+            that
+            enables you to practice building websites to a design and project brief. Each challenge
+            includes mobile and desktop designs to show how the website should look at different
+            screen sizes. Creating these projects has helped me refine my workflow and solve
+            real-world coding problems. I’ve learned something new with each project, helping
+            me to improve and adapt my style.</p>
+        </div>
 
-  <section class="detail">
-    <div class="overview__text-block">
-      <h2 class="overview__title">Bookmark</h2>
-      <p class="overview__paragraph">This project required me to build a fully responsive landing page to the designs
-        provided. I used HTML5, along with CSS Grid and JavaScript for the areas that
-        required interactivity, such as the features section.</p>
-      <p class="overview__language">Interaction Design / Front End Development</p>
-      <p class="overview__language">HTML / CSS / JS</p>
-      <button class="button-secondary button-secondary_place_overview">
-        <p class="button-secondary__text">Visit Website</p>
+        <div class="preview">
+          <h2 class="preview__title">Static Previews</h2>
+          <img class="preview__image_desktop" src="./images/detail/desktop/image-bookmark-preview-1@2x.jpg"
+            alt="bookmark first preview " />
+          <img class="preview__image_tablet" src="./images/detail/tablet/image-bookmark-preview-1@2x.jpg"
+            alt="bookmark first preview " />
+          <img class="preview__image_mobile" src="./images/detail/mobile/image-bookmark-preview-1@2x.jpg"
+            alt="bookmark first preview " />
+
+
+          <img class="preview__image_desktop" src="./images/detail/desktop/image-bookmark-preview-2@2x.jpg"
+            alt="bookmark second preview " />
+          <img class="preview__image_tablet" src="./images/detail/tablet/image-bookmark-preview-2@2x.jpg"
+            alt="bookmark second preview " />
+          <img class="preview__image_mobile" src="./images/detail/mobile/image-bookmark-preview-2@2x.jpg"
+            alt="bookmark second preview " />
+        </div>
+      </div>
+    </section>
+
+    <section class="arrows">
+      <div class="vertical-line"></div>
+
+      <div class="arrow-previous">
+        <svg class="arrow-previous__arrow-left" xmlns="http://www.w3.org/2000/svg" width="10" height="16">
+          <path fill="none" stroke="#33323D" d="M9 0L1 8l8 8" />
+        </svg>
+        <div class="arrow__wrapper">
+          <h2 class="arrow__title">Manage</h2>
+          <p class="arrow__subtitle">Previous Project</p>
+        </div>
+      </div>
+      <div class="arrow-next">
+        <div class="arrow__wrapper">
+          <h2 class="arrow__title">Insure</h2>
+          <p class="arrow__subtitle">Next Project</p>
+        </div>
+        <svg class="arrow-next__arrow-right" xmlns="http://www.w3.org/2000/svg" width="10" height="16">
+          <path fill="none" stroke="#33323D" d="M1 0l8 8-8 8" />
+        </svg>
+      </div>
+    </section>
+
+    <section class="contact contact_place_detail">
+      <h2 class="title title_place_contact">Interested in doing a project together?</h2>
+      <div class="horizontal-line"></div>
+      <button class="button-secondary button-secondary_place_contact">
+        <p class="button-secondary__text">Contact Me</p>
       </button>
-    </div>
-    <div class="info">
-      <div class="background">
-        <h2 class="background__title">Project Background</h2>
-        <p class="background__paragraph">This project was a front-end challenge from Frontend Mentor. It’s a platform
-          that
-          enables you to practice building websites to a design and project brief. Each challenge
-          includes mobile and desktop designs to show how the website should look at different
-          screen sizes. Creating these projects has helped me refine my workflow and solve
-          real-world coding problems. I’ve learned something new with each project, helping
-          me to improve and adapt my style.</p>
-      </div>
-
-      <div class="preview">
-        <h2 class="preview__title">Static Previews</h2>
-        <img class="preview__image preview__image_first" src="./images/detail/desktop/image-bookmark-preview-1@2x.jpg"
-          alt="bookmark first preview " />
-        <img class="preview__image" src="./images/detail/desktop/image-bookmark-preview-2@2x.jpg"
-          alt="bookmark second preview " />
-      </div>
-    </div>
-  </section>
-
-  <section class="arrows">
-    <div class="vertical-line"></div>
-
-    <div class="arrow-previous">
-      <svg class="arrow-previous__arrow-left" xmlns="http://www.w3.org/2000/svg" width="10" height="16">
-        <path fill="none" stroke="#33323D" d="M9 0L1 8l8 8" />
-      </svg>
-      <div class="arrow__wrapper">
-        <h2 class="arrow__title">Manage</h2>
-        <p class="arrow__subtitle">Previous Project</p>
-      </div>
-    </div>
-    <div class="arrow-next">
-      <div class="arrow__wrapper">
-        <h2 class="arrow__title">Insure</h2>
-        <p class="arrow__subtitle">Next Project</p>
-      </div>
-      <svg class="arrow-next__arrow-right" xmlns="http://www.w3.org/2000/svg" width="10" height="16">
-        <path fill="none" stroke="#33323D" d="M1 0l8 8-8 8" />
-      </svg>
-    </div>
-  </section>
-
-  <section class="contact contact_place_detail">
-    <h2 class="title title_place_contact">Interested in doing a project together?</h2>
-    <div class="horizontal-line"></div>
-    <button class="button-secondary button-secondary_place_contact">
-      <p class="button-secondary__text">Contact Me</p>
-    </button>
-  </section>
-
+    </section>
+  </main>
   <section class="footer">
     <div class="footer__nav-container">
       <div class="footer__nav-left">
