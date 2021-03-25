@@ -1172,7 +1172,22 @@
 
     .header__nav-list {
         display: none;
+        flex-direction: column;
     }
+
+    .main-menu:target, .main-menu {
+        display: block;
+    }
+
+
+
+
+
+
+
+
+
+    
 
     .lead {
         background-image: none;
