@@ -196,7 +196,8 @@
 .contact {
     display: flex;
     justify-content: space-between;
-    margin: 150px auto;
+    margin: 0 auto;
+    margin-bottom: 150px;
 }
 
 .title {
@@ -290,7 +291,12 @@
 
                                 /* PORTFOLIO INDEX CSS */
                 
-                                
+ 
+.projects {
+    margin-top: 94px;
+    margin-bottom: 150px;
+}                         
+
 .project {
     width: 91.44%;
     max-width: 1015px;
@@ -307,6 +313,8 @@
 .project__image_desktop {
     max-width: 540px;
     width: 53.2%;
+    height: 92.6%;
+    align-self: center;
 }
 
 .project__image_tablet {
@@ -696,6 +704,11 @@
         width: 25%;
  
     }
+
+    .main {
+        max-width: 1104px;
+        width: 90%;
+    }
     
 }
 
@@ -712,7 +725,6 @@
 
     .main {
         max-width: 689px;
-        width: 90%;
     }
     
     .header {
@@ -761,7 +773,17 @@
     }
 
     .contact {
-        margin: 96px auto;
+        flex-direction: column;
+        margin: 0 auto 80px auto;
+    }
+
+    .title_place_contact {
+        text-align: center;
+        margin: 0 auto 40px auto;
+    }
+
+    .button-secondary_place_contact {
+        margin: 0 auto;
     }
 
     .horizontal-line {
@@ -775,6 +797,10 @@
 
                                     /* PORTFOLIO CSS 768 */  
                       
+
+    .projects {
+        margin-bottom: 96px;
+    }
 
     .project {
         width: 100%;
@@ -820,6 +846,7 @@
         width: 175px;
         margin-bottom: 50px;
     }
+
 
 
                                 /* PORTFOLIO DETAIL CSS 768 */
@@ -949,8 +976,12 @@
 @media only screen and (max-width: 704px) {
 
 
-                                 /* HOMEPAGE CSS 580 */
+                                 /* HOMEPAGE CSS 704 */
 
+    .horizontal-line {
+        display: none;
+    }
+    
     .footer__nav-container {
         max-width: 104px;
         width: 27.73%;
@@ -991,7 +1022,21 @@
         margin: 0;
         padding: 0;
     }
+
+
+                                /* PORTFOLIO DETAIL CSS 704 */
+
+
+    .overview__bottom-wrapper {
+        margin-top: -185px;
+    }
+
+    .overview__paragraph {
+        padding-bottom: 32px;
+    }
 }
+
+
 
 
 
@@ -1022,25 +1067,59 @@
         margin-bottom: 28px;
     }
 
-    .horizontal-line {
+
+                            /* PORTFOLIO CSS 510 */
+
+   .projects {
+        margin-top: 40px;
+        margin-bottom: 80px;
+    }                        
+
+    .project {
+        flex-direction: column;
+        margin-top: 72px;
+        margin-bottom: 0;
+    }   
+
+    .project:first-of-type {
+        margin-top: 0;
+    }
+
+    .project__image_desktop {
         display: none;
     }
 
-    .contact {
-        flex-direction: column;
-
-        margin: 0 auto 80px auto;
+    .project__image_tablet {
+        display: none;
     }
 
-    .title_place_contact {
-        text-align: center;
-        margin: 0 auto 40px auto;
+    .project__image_mobile {
+        display: block;
+        width: 100%;
+        margin: 0;
     }
 
-    .button-secondary_place_contact {
-        margin: 0 auto;
+    .project__text-block {
+        margin-top: 32px;
+        max-width: 311px;
+        width: 100%;
     }
 
+    .project__paragraph {
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+
+    .button-secondary_place_project {
+        margin-bottom: 24px;
+    }
+
+
+                                    /* PORTFOLIO DETAIL CSS 510 */
+
+    .overview__bottom-wrapper {
+        margin-top: -240px;
+    }
 
 
                                  /* CONTACT CSS 510 */
@@ -1166,47 +1245,7 @@
                                  /*PORTFOLIO CSS 375 */
 
 
-    .projects {
-        margin-bottom: 80px;
-    }                        
-
-    .project {
-        flex-direction: column;
-        margin-top: 72px;
-        margin-bottom: 0;
-    }   
-
-    .project:first-of-type {
-        margin-top: 0;
-    }
-
-    .project__image_desktop {
-        display: none;
-    }
-
-    .project__image_tablet {
-        display: none;
-    }
-
-    .project__image_mobile {
-        display: block;
-        width: 100%;
-        margin: 0;
-    }
-
-    .project__text-block {
-        max-width: 311px;
-        width: 100%;
-    }
-
-    .project__paragraph {
-        margin-top: 24px;
-        margin-bottom: 24px;
-    }
-
-    .button-secondary_place_project {
-        margin-bottom: 24px;
-    }
+    
 
 
 
