@@ -1171,21 +1171,8 @@
     }
 
     .header__nav-list {
-        display: none;
         flex-direction: column;
     }
-
-    .main-menu:target, .main-menu {
-        display: block;
-    }
-
-
-
-
-
-
-
-
 
 
 
@@ -1198,8 +1185,6 @@
 
     .lead__image_mobile {
         display: block;
-        object-fit: contain;
-
     }
 
     .lead__box {
