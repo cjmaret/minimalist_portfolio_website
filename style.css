@@ -389,9 +389,10 @@
 .overview__text-block {
     max-width: 350px;
     width: 31.53%;
-    max-height: 498px;
+    height: 142%;
     border-top: 1px solid rgba(51, 50, 61, 0.15);
     border-bottom: 1px solid rgba(51, 50, 61, 0.15);
+    padding: 48px 0;
 }
 
 .overview__title {
@@ -400,8 +401,8 @@
     font-size: 40px;
     line-height: 42px;
     letter-spacing: -0.36px;
-    margin-top: 48px;
-    margin-bottom: 2px;
+    margin-bottom: 0;
+    margin-top: 0;
 }
 
 .overview__paragraph {
@@ -418,12 +419,13 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 30px;
-    margin-bottom: 16px;
+    margin-top: 16px;
+    margin-bottom: 0;
     color: #5FB4A2;
 }
 
 .button-secondary_place_overview {
-    margin: 32px auto 48px auto;
+    margin-top: 32px;
     width: 175px;
 }
 
@@ -872,6 +874,14 @@
     }
 
     .overview__text-block {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "title paragraph"
+            "bottom-wrapper paragraph"
+            ". paragraph";
+        grid-row-gap: 16px;
+        grid-column-gap: 12px;
         max-width: 689px;
         width: 100%;
         padding: 32px 0;
@@ -880,17 +890,20 @@
 
     .overview__title {
         margin-top: 0;
+        margin-bottom: 0;
+        grid-area: title;
     }
 
     .overview__paragraph {
-        width: 49.2%;
-        margin-left: auto;
-        margin-top: -45px;
+        grid-area: paragraph;
+        font-size: 15px;
+        margin: 0;
+        
     }
 
     .overview__bottom-wrapper {
-        width: 49.2%;
-        margin-top: -115px;
+        grid-area: bottom-wrapper;
+       
     }
 
     .overview__language {
@@ -1027,10 +1040,6 @@
                                 /* PORTFOLIO DETAIL CSS 704 */
 
 
-    .overview__bottom-wrapper {
-        margin-top: -185px;
-    }
-
     .overview__paragraph {
         padding-bottom: 32px;
     }
@@ -1117,8 +1126,17 @@
 
                                     /* PORTFOLIO DETAIL CSS 510 */
 
-    .overview__bottom-wrapper {
-        margin-top: -240px;
+    .overview__text-block {
+        display: block;
+    }
+
+    .overview__paragraph {
+        padding: 0;
+        margin: 24px 0;
+    }
+
+    .button-secondary_place_overview {
+        margin-top: 24px;
     }
 
 
@@ -1185,6 +1203,8 @@
 
     .lead__image_mobile {
         display: block;
+        object-fit: contain;
+        overflow: hidden;
     }
 
     .lead__box {
@@ -1275,12 +1295,11 @@
     
     .overview__paragraph {
         width: 100%;
-        margin: 0;
+        margin: 24px 0;
     }
 
     .overview__bottom-wrapper {
-        width: 100%;
-        margin: 0;
+        height: 100%;
     }
 
     .preview__image_tablet {
