@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;700&family=Public+Sans&display=swap');
 
+
 .page {
     max-width: 1440px;
     background-color: #FAFAFA;
@@ -19,6 +20,8 @@
 
 
 .header {
+    max-width: 1110px;
+    width: 77.1%;
     margin: 0 auto;
     margin-top: 64px;
     display: flex;
@@ -30,7 +33,7 @@
     margin-bottom: auto;
 }
 
-.header__nav-list {
+.menu {
     display: flex;
     justify-content: space-between;
     margin-top: auto;
@@ -57,6 +60,13 @@
     text-decoration: none;
 }
 
+.header .header__menu-icon {
+    display: none;
+  }
+
+.header__menu-btn {
+    display: none;
+}
 
 
 
@@ -97,6 +107,10 @@
     display: flex;
     justify-content: space-between;
     border: none;
+}
+
+.about-me-link {
+    text-decoration: none;
 }
 
 .button-primary__icon {
@@ -220,6 +234,10 @@
     margin: auto;
 }
 
+.contact__link {
+    margin: auto;
+}
+
 .button-secondary_place_contact {
     margin-top: auto;
     margin-bottom: auto;
@@ -247,6 +265,10 @@
     display: flex;
 }
 
+.logo__link {
+    margin: auto;
+}
+
 .footer__nav-list {
     list-style: none;
     color: #FFFFFF;
@@ -267,6 +289,11 @@
 
 .footer__link:last-child {
     margin-right: 0;
+}
+
+.footer__link-inside {
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
 .footer__logo-list {
@@ -494,12 +521,18 @@
     border-bottom: 1px solid rgba(51, 50, 61, 0.15);
 }
 
+.arrow__link {
+    text-decoration: none;
+    width: 50%;
+    color: black;
+    margin: auto;
+}
+
 .arrow-previous {
     display: flex;
     flex-direction: row;
-    width: 50%;
-    border-right: 1px solid rgba(51, 50, 61, 0.15);
 }
+
 
 .arrow-previous__arrow-left {
     margin-top: auto;
@@ -511,7 +544,6 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    width: 50%;
     border-left: 1px solid rgba(51, 50, 61, 0.15);
 }
 
@@ -524,6 +556,10 @@
 .arrow__wrapper {
     display: flex;
     flex-direction: column;
+}
+
+.arrow__wrapper_right {
+    text-align: right;
 }
 
 .arrow__title {
@@ -711,6 +747,11 @@
         max-width: 1104px;
         width: 90%;
     }
+
+    .header {
+        max-width: 1104px;
+        width: 90%;
+    }
     
 }
 
@@ -730,6 +771,7 @@
     }
     
     .header {
+        max-width: 689px;
         margin-bottom: 46px;
     }
 
@@ -994,6 +1036,10 @@
     .horizontal-line {
         display: none;
     }
+
+    .header {
+        max-width: 633.59px;
+    }
     
     .footer__nav-container {
         max-width: 104px;
@@ -1051,10 +1097,128 @@
 
 @media only screen and (max-width: 510px) {
 
-                            /* HOMEPAGE CSS 510 */
 
+    .header {
+        margin: 0;
+        width: 100%;
+        z-index: 3;
+        display: block;
+        position: fixed;
+        top: 0px;
+        background-color: #FAFAFA;
+        height: auto;
+    }
+      
+    .menu {
+        display: block;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        overflow: hidden;
+        background-color: #33323D;
+    }
 
-    
+    .header__list {
+       margin-right: 0;
+    }
+
+      
+    .header__link {
+        display: block;
+        padding: 20px 20px;
+        text-decoration: none;
+        text-align: center;
+        color: #FFFFFF;
+    }
+      
+    .header__link:hover,
+    .header .header__menu-btn:hover {
+        background-color: #f4f4f4;
+    }
+      
+    .logo_place_header {
+        display: block;
+        float: left;
+        font-size: 2em;
+        padding: 10px 20px;
+        text-decoration: none;
+    }
+      
+      /* menu */
+      
+    .header .menu {
+        clear: both;
+        max-height: 0;
+        transition: max-height .5s ease;
+    }
+      
+      /* menu icon */
+      
+    .header .header__menu-icon {
+        cursor: pointer;
+        display: inline-block;
+        float: right;
+        padding: 28px 20px;
+        position: relative;
+        user-select: none;
+    }
+      
+    .header .header__menu-icon .navicon {
+        background: #333;
+        display: block;
+        height: 2px;
+        position: relative;
+        transition: background .2s ease-out;
+        width: 18px;
+    }
+      
+    .header .header__menu-icon .navicon:before,
+    .header .header__menu-icon .navicon:after {
+        background: #333;
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
+        width: 100%;
+    }
+      
+    .header .header__menu-icon .navicon:before {
+        top: 5px;
+    }
+      
+    .header .header__menu-icon .navicon:after {
+        top: -5px;
+    }
+      
+      /* menu btn */
+      
+    .header .header__menu-btn {
+        display: none;
+    }
+      
+    .header .header__menu-btn:checked ~ .menu {
+        max-height: 240px;
+    }
+      
+    .header .header__menu-btn:checked ~ .header__menu-icon .navicon {
+        background: transparent;
+    }
+      
+    .header .header__menu-btn:checked ~ .header__menu-icon .navicon:before {
+        transform: rotate(-45deg);
+    }
+      
+    .header .header__menu-btn:checked ~ .header__menu-icon .navicon:after {
+        transform: rotate(45deg);
+    }
+      
+    .header .header__menu-btn:checked ~ .header__menu-icon:not(.steps) .navicon:before,
+    .header .header__menu-btn:checked ~ .header__menu-icon:not(.steps) .navicon:after {
+        top: 0;
+    }
+      
+      
     .lead__box {
         width: 75%;
     }
@@ -1139,6 +1303,38 @@
         margin-top: 24px;
     }
 
+    .arrow-previous {
+        flex-direction: column;
+    }
+
+    .arrow-next {
+        flex-direction: column-reverse;
+    }
+
+    .arrow-previous__arrow-left {
+        margin-top: 24px;
+        margin-right: auto;
+        margin-bottom: 16px;
+    }
+
+    .arrow-next__arrow-right {
+        margin-top: 24px;
+        margin-left: auto;
+        margin-bottom: 16px;
+    }
+
+    .arrow__wrapper {
+        margin-bottom: 24px;
+    }
+
+    .arrow__title {
+        margin-top: 0;
+    }
+
+    .arrow__subtitle {
+        margin-bottom: 0;
+    }
+
 
                                  /* CONTACT CSS 510 */
     
@@ -1183,16 +1379,10 @@
         width: 83%;
     }
 
-    .header {
-        margin-top: 32px;
-        margin-bottom: 40px;
-    }
 
     .header__nav-list {
         flex-direction: column;
     }
-
-
 
     .lead {
         background-image: none;
@@ -1279,6 +1469,7 @@
     }
 
     .cover-image_mobile {
+        margin-top: 90px;
         display: block;
         width: 100%;
     }
@@ -1320,36 +1511,8 @@
         margin-bottom: 64px;
     }
 
-    .arrow-previous {
-        flex-direction: column;
-    }
+    
 
-    .arrow-next {
-        flex-direction: column-reverse;
-    }
-
-    .arrow-next__arrow-right {
-        margin-top: 24px;
-        margin-left: auto;
-        margin-bottom: 16px;
-
-    }
-
-    .arrow__wrapper {
-        margin-bottom: 24px;
-    }
-
-    .arrow__wrapper_mobile_right {
-        text-align: right;
-    }
-
-    .arrow__title {
-        margin-top: 0;
-    }
-
-    .arrow__subtitle {
-        margin-bottom: 0;
-    }
 
 
 

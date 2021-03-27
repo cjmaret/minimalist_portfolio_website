@@ -12,20 +12,22 @@
 
 <body class="page">
 
-  <main class="main">
-
-    <header class="header">
-      <svg class="logo logo_place_header" xmlns="http://www.w3.org/2000/svg" width="61" height="32">
+  <header class="header">
+    <a href="./index.html"><svg class="logo logo_place_header" xmlns="http://www.w3.org/2000/svg" width="61"
+        height="32">
         <path fill="#33323D" fill-rule="evenodd"
           d="M60.082 5.878L44.408 32 28.735 5.878h31.347zM15.673 0l15.674 26.122H0L15.673 0z" />
-      </svg>
-      <ul class="header__nav-list">
-        <li class="header__list"><a class="header__link" href="#">Home</a></li>
-        <li class="header__list"><a class="header__link" href="#">Portfolio</a></li>
-        <li class="header__list"><a class="header__link" href="#">Contact Me</a></li>
-      </ul>
-    </header>
+      </svg></a>
+    <input class="header__menu-btn" type="checkbox" id="header__menu-btn" />
+    <label class="header__menu-icon" for="header__menu-btn"><span class="navicon"></span></label>
+    <ul class="menu">
+      <li class="header__list"><a href="./index.html" class="header__link">Home</a></li>
+      <li class="header__list"><a href="./portfolio.html" class="header__link">Portfolio</a></li>
+      <li class="header__list"><a href="./contact.html" class="header__link">Contact Me</a></li>
+    </ul>
+  </header>
 
+  <main class="main">
 
     <section class="projects">
       <section class="project project_place_left">
@@ -38,9 +40,9 @@
             provided.
             I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity,
             such as the testimonial slider.</p>
-          <button class="button-secondary button-secondary_place_project">
-            <p class="button-secondary__text">View Project</p>
-          </button>
+          <a href="./manage.html"><button class="button-secondary button-secondary_place_project">
+              <p class="button-secondary__text">View Project</p>
+            </button></a>
         </div>
       </section>
 
@@ -53,9 +55,9 @@
             provided. I
             used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such
             as the features section.</p>
-          <button class="button-secondary button-secondary_place_project">
-            <p class="button-secondary__text">View Project</p>
-          </button>
+          <a href="./bookmark.html"><button class="button-secondary button-secondary_place_project">
+              <p class="button-secondary__text">View Project</p>
+            </button></a>
         </div>
         <img class="project__image_desktop" src="./images/portfolio/desktop/image-portfolio-bookmark@2x.jpg" />
         <img class="project__image_tablet" src="./images/portfolio/tablet/image-portfolio-bookmark@2x.jpg" />
@@ -73,9 +75,9 @@
             fully-responsive
             landing page. The only JavaScript this project required was to enable the toggling of the
             mobile navigation.</p>
-          <button class="button-secondary button-secondary_place_project">
-            <p class="button-secondary__text">View Project</p>
-          </button>
+          <a href="./insure.html"><button class="button-secondary button-secondary_place_project">
+              <p class="button-secondary__text">View Project</p>
+            </button></a>
         </div>
       </section>
 
@@ -88,9 +90,9 @@
             work to and
             built it so that it was fully-responsive. I took a mobile-first approach and used modern
             CSS like Flexbox and Grid for layout purposes.</p>
-          <button class="button-secondary button-secondary_place_project">
-            <p class="button-secondary__text">View Project</p>
-          </button>
+          <a href="./fylo.html"><button class="button-secondary button-secondary_place_project">
+              <p class="button-secondary__text">View Project</p>
+            </button></a>
         </div>
         <img class="project__image_desktop" src="./images/portfolio/desktop/image-portfolio-fylo@2x.jpg" />
         <img class="project__image_tablet" src="./images/portfolio/tablet/image-portfolio-fylo@2x.jpg" />
@@ -100,9 +102,9 @@
     <section class="contact">
       <h2 class="title title_place_contact">Interested in doing a project together?</h2>
       <div class="horizontal-line"></div>
-      <button class="button-secondary button-secondary_place_contact">
-        <p class="button-secondary__text">Contact Me</p>
-      </button>
+      <a class="contact__link" href="./contact.html"><button class="button-secondary button-secondary_place_contact">
+          <p class="button-secondary__text">Contact Me</p>
+        </button></a>
     </section>
 
 
@@ -111,14 +113,15 @@
   <section class="footer">
     <div class="footer__nav-container">
       <div class="footer__nav-left">
-        <svg class="logo logo_place_footer" xmlns="http://www.w3.org/2000/svg" width="61" height="32">
-          <path fill="#FFFFFF" fill-rule="evenodd"
-            d="M60.082 5.878L44.408 32 28.735 5.878h31.347zM15.673 0l15.674 26.122H0L15.673 0z" />
-        </svg>
+        <a class="logo__link" href="./index.html"><svg class="logo logo_place_footer" xmlns="http://www.w3.org/2000/svg"
+            width="61" height="32">
+            <path fill="#FFFFFF" fill-rule="evenodd"
+              d="M60.082 5.878L44.408 32 28.735 5.878h31.347zM15.673 0l15.674 26.122H0L15.673 0z" />
+          </svg></a>
         <ul class="footer__nav-list">
-          <li class="footer__link">Home</li>
-          <li class="footer__link">Portfolio</li>
-          <li class="footer__link">Contact Me</li>
+          <li class="footer__link"><a class="footer__link-inside" href="./index.html">Home</a></li>
+          <li class="footer__link"><a class="footer__link-inside" href="./portfolio.html">Portfolio</a></li>
+          <li class="footer__link"><a class="footer__link-inside" href="./contact.html">Contact Me</a></li>
         </ul>
       </div>
 
@@ -138,6 +141,7 @@
       </ul>
     </div>
   </section>
+
 </body>
 
 </html>
