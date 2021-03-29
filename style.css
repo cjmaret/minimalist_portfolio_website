@@ -1426,7 +1426,7 @@
 @media only screen and (max-width: 450px) {
 
 
-                                 /* HOMEPAGE CSS 375 */
+                                 /* HOMEPAGE CSS 450 */
 
     .main {
         max-width: 311px;
@@ -1447,6 +1447,8 @@
 
     .lead__image_mobile {
         display: block;
+        width: 100%;
+        margin: auto;
         object-fit: contain;
         overflow: hidden;
     }
