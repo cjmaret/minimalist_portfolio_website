@@ -219,7 +219,7 @@
     cursor: pointer;
 }
 
-.button-secondary:hover {
+.button-secondary:hover, .button-secondary:active {
     background-color: #33323D;
     color: white;
 }
