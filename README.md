@@ -1,4 +1,4 @@
-#[Minimalist Portfolio Website](https://cjmaret.github.io/minimalist_portfolio_website/)
+# [Minimalist Portfolio Website](https://cjmaret.github.io/minimalist_portfolio_website/)
 
 ## Project Description / Functionality: 
 
